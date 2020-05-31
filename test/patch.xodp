@@ -1,0 +1,128 @@
+{
+  "links": [
+    {
+      "id": "BkXL9HxnU",
+      "input": {
+        "nodeId": "SJ-LcHe3U",
+        "pinKey": "Hk2wvHg3U"
+      },
+      "output": {
+        "nodeId": "HysS9rg3L",
+        "pinKey": "S1z83Vg2U"
+      }
+    },
+    {
+      "id": "HkOcqrenU",
+      "input": {
+        "nodeId": "SJ-LcHe3U",
+        "pinKey": "ryxTPHx2U"
+      },
+      "output": {
+        "nodeId": "rJgwqrgh8",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "SJGCRIx38",
+      "input": {
+        "nodeId": "SJ-LcHe3U",
+        "pinKey": "SJ4UuBx3L"
+      },
+      "output": {
+        "nodeId": "H1-p0Ux2I",
+        "pinKey": "H12bIR_SPyZ"
+      }
+    },
+    {
+      "id": "Syl0R8gnU",
+      "input": {
+        "nodeId": "H1-p0Ux2I",
+        "pinKey": "BJlzICOSv1-"
+      },
+      "output": {
+        "nodeId": "HybjqSl3L",
+        "pinKey": "SyBtREhlW"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BJD0NvxhU",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": -0.25
+      },
+      "type": "xod/uart/uart-0"
+    },
+    {
+      "boundLiterals": {
+        "HJCWLAdSwyW": "1",
+        "rkpbU0OrwyZ": "5000"
+      },
+      "id": "H1-p0Ux2I",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "xod/math/map"
+    },
+    {
+      "id": "HybjqSl3L",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/gpio/analog-read"
+    },
+    {
+      "id": "HysS9rg3L",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "@/nextion-device"
+    },
+    {
+      "id": "S1ZGBvxnL",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 2
+      },
+      "type": "xod/uart/soft-uart"
+    },
+    {
+      "boundLiterals": {
+        "rk3DdHeh8": "Continuously"
+      },
+      "id": "SJ-LcHe3U",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "@/write-number"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"Nvoltage.val\""
+      },
+      "id": "rJgwqrgh8",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    }
+  ]
+}
