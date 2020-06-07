@@ -1,2 +1,55 @@
 {
+  "nodes": [
+    {
+      "id": "B1ZtaYcnU",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "id": "BJfZKaKc3I",
+      "label": "PUSH",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "Skm-t6Y53U",
+      "label": "CMD",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-string"
+    },
+    {
+      "description": "A nextion device.",
+      "id": "rJebYpt9nI",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-nextion-serial"
+    },
+    {
+      "description": "String to be written.",
+      "id": "rkg56F9hL",
+      "label": "TEXT",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-string"
+    }
+  ]
 }

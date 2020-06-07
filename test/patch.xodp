@@ -1,14 +1,14 @@
 {
   "links": [
     {
-      "id": "BkXL9HxnU",
+      "id": "H1DKdY53L",
       "input": {
         "nodeId": "SJ-LcHe3U",
         "pinKey": "Hk2wvHg3U"
       },
       "output": {
-        "nodeId": "HysS9rg3L",
-        "pinKey": "S1z83Vg2U"
+        "nodeId": "SyBY_K9nU",
+        "pinKey": "ry-SqrtnL"
       }
     },
     {
@@ -47,15 +47,6 @@
   ],
   "nodes": [
     {
-      "id": "BJD0NvxhU",
-      "position": {
-        "units": "slots",
-        "x": 0,
-        "y": -0.25
-      },
-      "type": "xod/uart/uart-0"
-    },
-    {
       "boundLiterals": {
         "HJCWLAdSwyW": "1",
         "rkpbU0OrwyZ": "5000"
@@ -78,24 +69,6 @@
       "type": "xod/gpio/analog-read"
     },
     {
-      "id": "HysS9rg3L",
-      "position": {
-        "units": "slots",
-        "x": 0,
-        "y": 1
-      },
-      "type": "@/nextion-device"
-    },
-    {
-      "id": "S1ZGBvxnL",
-      "position": {
-        "units": "slots",
-        "x": 11,
-        "y": 2
-      },
-      "type": "xod/uart/soft-uart"
-    },
-    {
       "boundLiterals": {
         "rk3DdHeh8": "Continuously"
       },
@@ -106,6 +79,15 @@
         "y": 2
       },
       "type": "@/write-number"
+    },
+    {
+      "id": "SyBY_K9nU",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "@/nextion-serial1"
     },
     {
       "boundLiterals": {

@@ -10,6 +10,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": "A nextion device.",
       "id": "S1z83Vg2U",
       "label": "DEV",
       "position": {
@@ -18,6 +19,20 @@
         "y": 2
       },
       "type": "xod/patch-nodes/output-self"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "9600"
+      },
+      "description": "Baud rate",
+      "id": "rkhbsBuh8",
+      "label": "BAUD",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
     }
   ]
 }

@@ -1,17 +1,17 @@
 {
   "nodes": [
     {
-      "id": "B18ZtKch8",
+      "id": "BJ0LqBKnU",
       "label": "DEV",
       "position": {
         "units": "slots",
         "x": 0,
-        "y": 0
+        "y": 2
       },
-      "type": "@/input-nextion-serial"
+      "type": "@/output-nextion-serial"
     },
     {
-      "id": "B1kmuHKhI",
+      "id": "SkStSSK2U",
       "position": {
         "units": "slots",
         "x": 0,
@@ -20,15 +20,18 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Update.",
-      "id": "BykMKK5hI",
-      "label": "UPD",
+      "boundLiterals": {
+        "__out__": "9600"
+      },
+      "description": "Baud rate",
+      "id": "rybSKBrK3U",
+      "label": "BAUD",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 0,
         "y": 0
       },
-      "type": "xod/patch-nodes/input-pulse"
+      "type": "xod/patch-nodes/input-number"
     }
   ]
 }

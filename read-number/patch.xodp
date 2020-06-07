@@ -1,2 +1,55 @@
 {
+  "nodes": [
+    {
+      "id": "BkTwWq5nU",
+      "label": "CMD",
+      "position": {
+        "units": "slots",
+        "x": -15,
+        "y": -3
+      },
+      "type": "xod/patch-nodes/input-string"
+    },
+    {
+      "description": "Number.",
+      "id": "H1ITe992L",
+      "label": "NUM",
+      "position": {
+        "units": "slots",
+        "x": -16,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "H1NFl553I",
+      "position": {
+        "units": "slots",
+        "x": -16,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Update. Trigger read.",
+      "id": "HyXoe593I",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": -14,
+        "y": -3
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "Skq5xqq2L",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -16,
+        "y": -3
+      },
+      "type": "@/input-nextion-serial"
+    }
+  ]
 }

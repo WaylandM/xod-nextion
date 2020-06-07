@@ -18,7 +18,7 @@
         "x": 0,
         "y": 0
       },
-      "type": "@/input-nextion-device"
+      "type": "@/input-nextion-serial"
     },
     {
       "id": "SJ4UuBx3L",
