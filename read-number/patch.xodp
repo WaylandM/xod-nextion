@@ -31,6 +31,9 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
       "description": "Update. Trigger read.",
       "id": "HyXoe593I",
       "label": "UPD",
