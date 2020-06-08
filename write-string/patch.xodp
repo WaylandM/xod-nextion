@@ -1,4 +1,5 @@
 {
+  "description": "Write to the string attribute of an object. ",
   "nodes": [
     {
       "id": "B1ZtaYcnU",
@@ -10,8 +11,9 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": "Update.",
       "id": "BJfZKaKc3I",
-      "label": "PUSH",
+      "label": "UPD",
       "position": {
         "units": "slots",
         "x": 3,
@@ -20,6 +22,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "Command. Specify object and attribute to be written. For example, t0.txt will overwrite the text attribute of the object named t0.",
       "id": "Skm-t6Y53U",
       "label": "CMD",
       "position": {

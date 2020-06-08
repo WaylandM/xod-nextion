@@ -1,4 +1,5 @@
 {
+  "description": "Write to a numeric attribute of an object. ",
   "nodes": [
     {
       "id": "B1ALvBg3U",
@@ -21,6 +22,7 @@
       "type": "@/input-nextion-serial"
     },
     {
+      "description": "Number to be written.",
       "id": "SJ4UuBx3L",
       "label": "VAL",
       "position": {
@@ -45,6 +47,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "Command. Specify object and attribute to be written. For example, va0.val will overwrite the value attribute of the object named va0.",
       "id": "ryxTPHx2U",
       "label": "CMD",
       "position": {

@@ -1,4 +1,5 @@
 {
+  "description": "To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/raw/master/hmi/xod-demo-1.HMI",
   "links": [
     {
       "id": "BJmQrxshL",

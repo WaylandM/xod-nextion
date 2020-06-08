@@ -2,7 +2,7 @@
   "description": "Read a numeric attribute of an object on the nextion display.",
   "nodes": [
     {
-      "description": "Command. Specify object and attibute to be read. For example",
+      "description": "Command. Specify object and attibute to be read. For example va0.val will read the value attribute of the object named va0.",
       "id": "BkTwWq5nU",
       "label": "CMD",
       "position": {
