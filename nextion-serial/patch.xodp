@@ -1,4 +1,5 @@
 {
+  "description": "Create a nextion device on Serial.",
   "nodes": [
     {
       "id": "HyXx3Vl28",
@@ -10,7 +11,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "A nextion device.",
+      "description": "A nextion device .",
       "id": "S1z83Vg2U",
       "label": "DEV",
       "position": {
@@ -24,7 +25,7 @@
       "boundLiterals": {
         "__out__": "9600"
       },
-      "description": "Baud rate",
+      "description": "Baud rate.",
       "id": "rkhbsBuh8",
       "label": "BAUD",
       "position": {

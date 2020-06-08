@@ -1,6 +1,8 @@
 {
+  "description": "Read a numeric attribute of an object on the nextion display.",
   "nodes": [
     {
+      "description": "Command. Specify object and attibute to be read. For example",
       "id": "BkTwWq5nU",
       "label": "CMD",
       "position": {
@@ -45,6 +47,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "A nextion device.",
       "id": "Skq5xqq2L",
       "label": "DEV",
       "position": {

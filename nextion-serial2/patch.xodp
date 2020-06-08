@@ -1,6 +1,8 @@
 {
+  "description": "Create a nextion device on Serial2.",
   "nodes": [
     {
+      "description": "A nextion device.",
       "id": "BJ0LqBKnU",
       "label": "DEV",
       "position": {
