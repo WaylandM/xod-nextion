@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "Hy9hK21VF",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Update.",
+      "id": "Bkx5nt3kEY",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Command. Specify object and attribute to be written. For example, t0.txt will overwrite the text attribute of the object named t0.",
+      "id": "rkb5nt2kNY",
+      "label": "CMD",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-string"
+    },
+    {
+      "description": "A nextion device.",
+      "id": "Hyf5ht2JVY",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-nextion-serial"
+    },
+    {
+      "description": "Pulse on write.",
+      "id": "Bk4chYnkVt",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
+}
