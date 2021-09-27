@@ -1,30 +1,28 @@
+node {
+    void evaluate(Context ctx) {
+        // The node responds only if there is an input pulse
+        if (!isInputDirty<input_UPD>(ctx))
+            return;
 
-struct State {
-};
+        // Get a pointer to the `EasyNex` class instance
+        auto eznex = getValue<input_DEV>(ctx);
+        auto xStringCmd = getValue<input_CMD>(ctx);
+        auto xStringText = getValue<input_TEXT>(ctx);
 
-{{ GENERATED_CODE }}
+        int N=length(xStringCmd) + 1;
+        char cStringCmd[N];
+        for(int i=0;i<N;i++)
+            cStringCmd[i]=0;
+        dump(xStringCmd, cStringCmd);
 
-void evaluate(Context ctx) {
-    // The node responds only if there is an input pulse
-    if (!isInputDirty<input_UPD>(ctx))
-        return;
+        N=length(xStringText) + 1;
+        char cStringText[N];
+        for(int i=0;i<N;i++)
+            cStringText[i]=0;
+        dump(xStringText, cStringText);
 
-    // Get a pointer to the `EasyNex` class instance
-    auto eznex = getValue<input_DEV>(ctx);
-    auto xStringCmd = getValue<input_CMD>(ctx);
-    auto xStringText = getValue<input_TEXT>(ctx);
-
-    int N=length(xStringCmd) + 1;
-    char cStringCmd[N];
-    for(int i=0;i<N;i++)
-        cStringCmd[i]=0;
-    dump(xStringCmd, cStringCmd);
-
-    N=length(xStringText) + 1;
-    char cStringText[N];
-    for(int i=0;i<N;i++)
-        cStringText[i]=0;
-    dump(xStringText, cStringText);
-
-    eznex -> writeStr(cStringCmd, cStringText);
+        eznex -> writeStr(cStringCmd, cStringText);
+        emitValue<output_Done>(ctx, 1);
+    }
 }
+

@@ -1,29 +1,25 @@
 // Tell XOD where it could download the library:
-#pragma XOD require "https://github.com/Seithan/EasyNextionLibrary"
+#pragma XOD require "https://github.com/WaylandM/EasyNextionLibraryXOD"
 
 //Include C++ libraries
-{{#global}}
-#include <EasyNextionLibrary.h>
-{{/global}}
+#include <EasyNextionLibraryXOD.h>
 
-struct State {
-    uint8_t mem[sizeof(EasyNex)];
-};
+node {
+    meta {
+        // Define our custom type as a pointer on the class instance.
+        using Type = EasyNex*;
+    }
 
-// Define our custom type as a pointer on the class instance.
-using Type = EasyNex*;
+    // Create an object of class EasyNex
+    EasyNex eznex = EasyNex(Serial2);
 
-{{ GENERATED_CODE }}
+    void evaluate(Context ctx) {
+        // It should be evaluated only once on the first (setup) transaction
+        if (!isSettingUp())
+            return;
 
-void evaluate(Context ctx) {
-    // It should be evaluated only once on the first (setup) transaction
-    if (!isSettingUp())
-        return;
-
-    auto state = getState(ctx);
-
-    Type eznex = new (state->mem) EasyNex(Serial2);
-    // Begin the EasyNex object with user specified Baud rate
-    eznex->begin(getValue<input_BAUD>(ctx));
-    emitValue<output_DEV>(ctx, eznex);
+        // Initialize the EasyNex object with user specified Baud rate
+        eznex.begin(getValue<input_BAUD>(ctx));
+        emitValue<output_DEV>(ctx, &eznex);
+    }
 }

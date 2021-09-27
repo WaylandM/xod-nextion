@@ -53,6 +53,17 @@
         "y": 0
       },
       "type": "xod/patch-nodes/input-string"
+    },
+    {
+      "description": "Pulse on write.",
+      "id": "BJ-kVOkNt",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
     }
   ]
 }
