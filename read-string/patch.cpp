@@ -1,4 +1,7 @@
 node {
+    CStringView view;
+    char* cStringOut;
+
     void evaluate(Context ctx) {
 
         // The node responds only if there is an input pulse
@@ -15,7 +18,15 @@ node {
             cString[i]=0;
         dump(xString, cString);
 
-        emitValue<output_NUM>(ctx, eznex -> readNumber(cString));
+        String str = eznex -> readString(cString);
+        int strLen = str.length() + 1;
+        cStringOut = new char[strLen];
+
+        str.toCharArray(cStringOut, strLen);
+
+        view=CStringView(cStringOut);
+
+        emitValue<output_String>(ctx, XString(&view));
         emitValue<output_Done>(ctx, 1);
     }
 

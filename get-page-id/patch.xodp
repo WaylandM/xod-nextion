@@ -25,7 +25,7 @@
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 7,
+        "x": 6,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
@@ -43,7 +43,7 @@
     {
       "description": "ID of current page.",
       "id": "HJ0rn5k4Y",
-      "label": "Curr.",
+      "label": "Curr",
       "position": {
         "units": "slots",
         "x": 5,
@@ -54,7 +54,7 @@
     {
       "description": "ID of previous page.",
       "id": "SJrdnckVF",
-      "label": "Prev.",
+      "label": "Prev",
       "position": {
         "units": "slots",
         "x": 6,
