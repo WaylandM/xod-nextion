@@ -1,4 +1,5 @@
 {
+  "description": "Send command to the nextion display.",
   "nodes": [
     {
       "id": "Hy9hK21VF",
@@ -21,7 +22,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Command. Specify object and attribute to be written. For example, t0.txt will overwrite the text attribute of the object named t0.",
+      "description": "Command.",
       "id": "rkb5nt2kNY",
       "label": "CMD",
       "position": {
@@ -43,7 +44,7 @@
       "type": "@/input-nextion-serial"
     },
     {
-      "description": "Pulse on write.",
+      "description": "Pulse when command sent.",
       "id": "Bk4chYnkVt",
       "label": "Done",
       "position": {

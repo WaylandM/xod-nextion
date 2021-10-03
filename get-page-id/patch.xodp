@@ -1,4 +1,5 @@
 {
+  "description": "Get ID number of current and previous pages.",
   "nodes": [
     {
       "id": "SkJb39k4t",
@@ -10,6 +11,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": "A nextion device.",
       "id": "ByqWh9y4F",
       "label": "DEV",
       "position": {
@@ -31,6 +33,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "Pulse after retrieving page IDs.",
       "id": "HJNNn514F",
       "label": "Done",
       "position": {
