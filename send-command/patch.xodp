@@ -11,6 +11,9 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
       "description": "Update.",
       "id": "Bkx5nt3kEY",
       "label": "UPD",

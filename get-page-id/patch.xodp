@@ -22,6 +22,9 @@
       "type": "@/input-nextion-serial"
     },
     {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
       "description": "Update.",
       "id": "rJiz29kNK",
       "label": "UPD",

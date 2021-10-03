@@ -1,0 +1,286 @@
+{
+  "comments": [
+    {
+      "content": "Create a *nextion* device on *Serial1* with baud rate of *9600*.",
+      "id": "HyzrKIivVY",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": -1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    }
+  ],
+  "description": "Patch to demonstrate operation of dual-state buttons.",
+  "links": [
+    {
+      "id": "SJjGdLsw4F",
+      "input": {
+        "nodeId": "ByzdUjwNF",
+        "pinKey": "Skq5xqq2L"
+      },
+      "output": {
+        "nodeId": "SJzfu8jDNY",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BJ3MdUswNF",
+      "input": {
+        "nodeId": "HkLfOIjDVY",
+        "pinKey": "HyYh1a3LZ"
+      },
+      "output": {
+        "nodeId": "ByzdUjwNF",
+        "pinKey": "H1ITe992L"
+      }
+    },
+    {
+      "id": "ry0MO8iwEY",
+      "input": {
+        "nodeId": "r1ZfuIswEK",
+        "pinKey": "HyYh1a3LZ"
+      },
+      "output": {
+        "nodeId": "r1gMOLjv4t",
+        "pinKey": "H1ITe992L"
+      }
+    },
+    {
+      "id": "Sy1ezuUsPVY",
+      "input": {
+        "nodeId": "ByzdUjwNF",
+        "pinKey": "BkTwWq5nU"
+      },
+      "output": {
+        "nodeId": "Skwzu8oDEK",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "H1gefu8svNt",
+      "input": {
+        "nodeId": "H1qfOUiP4t",
+        "pinKey": "HyYh1a3LZ"
+      },
+      "output": {
+        "nodeId": "HyKG_Usw4F",
+        "pinKey": "H1ITe992L"
+      }
+    },
+    {
+      "id": "BkWxMOIiwVt",
+      "input": {
+        "nodeId": "HyKG_Usw4F",
+        "pinKey": "BkTwWq5nU"
+      },
+      "output": {
+        "nodeId": "SkrzO8oDVF",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "H1zlGOIoDVK",
+      "input": {
+        "nodeId": "HyKG_Usw4F",
+        "pinKey": "Skq5xqq2L"
+      },
+      "output": {
+        "nodeId": "S1Qz_IovNK",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "H1XgzOUowNt",
+      "input": {
+        "nodeId": "r1gMOLjv4t",
+        "pinKey": "BkTwWq5nU"
+      },
+      "output": {
+        "nodeId": "S1dMdLoP4F",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "SkbHY8oDEF",
+      "input": {
+        "nodeId": "ByHY8jw4Y",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "r1erKUoPEY",
+        "pinKey": "ry-SqrtnL"
+      }
+    },
+    {
+      "id": "SyoGviwNK",
+      "input": {
+        "nodeId": "r1gMOLjv4t",
+        "pinKey": "Skq5xqq2L"
+      },
+      "output": {
+        "nodeId": "r1erKUoPEY",
+        "pinKey": "ry-SqrtnL"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ByzdUjwNF",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 1
+      },
+      "type": "@/read-number"
+    },
+    {
+      "id": "r1gMOLjv4t",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "@/read-number"
+    },
+    {
+      "boundLiterals": {
+        "B1oqkTnIb": "D3"
+      },
+      "id": "r1ZfuIswEK",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/common-hardware/led"
+    },
+    {
+      "id": "SJzfu8jDNY",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "S1Qz_IovNK",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"bt2.val\""
+      },
+      "id": "SkrzO8oDVF",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    },
+    {
+      "boundLiterals": {
+        "B1oqkTnIb": "D5"
+      },
+      "id": "HkLfOIjDVY",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 2
+      },
+      "type": "xod/common-hardware/led"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"bt1.val\""
+      },
+      "id": "Skwzu8oDEK",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"bt0.val\""
+      },
+      "id": "S1dMdLoP4F",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    },
+    {
+      "id": "HyKG_Usw4F",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 1
+      },
+      "type": "@/read-number"
+    },
+    {
+      "boundLiterals": {
+        "B1oqkTnIb": "D6"
+      },
+      "id": "H1qfOUiP4t",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 2
+      },
+      "type": "xod/common-hardware/led"
+    },
+    {
+      "id": "ByHY8jw4Y",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "r1erKUoPEY",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": -1
+      },
+      "type": "@/nextion-serial1"
+    }
+  ]
+}

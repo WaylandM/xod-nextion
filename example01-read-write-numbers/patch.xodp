@@ -1,2 +1,414 @@
 {
+  "comments": [
+    {
+      "content": "# A tutorial on using the nextion library can be found here: https://www.hackster.io/wayland2/",
+      "id": "BkkIl8PEt",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 4
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 19
+      }
+    },
+    {
+      "content": "Read from potentiometer.",
+      "id": "H1pDVUwVt",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 3
+      }
+    },
+    {
+      "content": "Create a *nextion* device on *Serial1* with baud rate of *9600*.",
+      "id": "rJEKELvEK",
+      "position": {
+        "units": "slots",
+        "x": -3,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    },
+    {
+      "content": "Convert output from analog-read to a voltage (mV). ",
+      "id": "rkjXBUwNF",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    },
+    {
+      "content": "Write voltage measurement to the value (*val*) attribute of the variable named *va0*.",
+      "id": "HkTyILDNK",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 5
+      }
+    },
+    {
+      "content": "*va0.val* specifies the value attribute of the object named *va0*.",
+      "id": "BkMyP8vVK",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    },
+    {
+      "content": "*h0.val* specifies the value attribute of the object named *h0*. In this case, *h0* is a slider.",
+      "id": "H1HDPIvEF",
+      "position": {
+        "units": "slots",
+        "x": 17,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 7
+      }
+    },
+    {
+      "content": "Read the value of the slider widget *h0*.",
+      "id": "SJzJuLPNt",
+      "position": {
+        "units": "slots",
+        "x": 17,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    },
+    {
+      "content": "# Write a number to a nextion variable.",
+      "id": "B1rVuIP4K",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": -1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 9
+      }
+    },
+    {
+      "content": "# Read a numeric value from a nextion slider widget.",
+      "id": "SJG8dID4Y",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": -1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 10
+      }
+    },
+    {
+      "content": "Map slider value (0-100) to input range of servo (0-1).",
+      "id": "HJo2dIwVt",
+      "position": {
+        "units": "slots",
+        "x": 19,
+        "y": 2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    },
+    {
+      "content": "Write transformed slider value to servo.",
+      "id": "SkNxFLvVY",
+      "position": {
+        "units": "slots",
+        "x": 16,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    }
+  ],
+  "description": "Patch demonstrating how to read/write numeric attributes of nextion widgets and variables.",
+  "links": [
+    {
+      "id": "S1LV81UvEF",
+      "input": {
+        "nodeId": "S1mVIyUPVt",
+        "pinKey": "SJ4UuBx3L"
+      },
+      "output": {
+        "nodeId": "HkEVL1UvVF",
+        "pinKey": "H12bIR_SPyZ"
+      }
+    },
+    {
+      "id": "S1DNLJLDVK",
+      "input": {
+        "nodeId": "HkEVL1UvVF",
+        "pinKey": "BJlzICOSv1-"
+      },
+      "output": {
+        "nodeId": "SyeV8kLDNK",
+        "pinKey": "SyBtREhlW"
+      }
+    },
+    {
+      "id": "H1FE8kLP4t",
+      "input": {
+        "nodeId": "S1mVIyUPVt",
+        "pinKey": "ryxTPHx2U"
+      },
+      "output": {
+        "nodeId": "HJEUy8wNK",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "B1qNLy8wVK",
+      "input": {
+        "nodeId": "SJZN8yIvEK",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "H1fNI1Lw4t",
+        "pinKey": "ry-SqrtnL"
+      }
+    },
+    {
+      "id": "H17G_1IDEF",
+      "input": {
+        "nodeId": "Hy-GdJUP4K",
+        "pinKey": "BJlzICOSv1-"
+      },
+      "output": {
+        "nodeId": "SkMuJIw4t",
+        "pinKey": "H1ITe992L"
+      }
+    },
+    {
+      "id": "B1EGdJLvNY",
+      "input": {
+        "nodeId": "SkMuJIw4t",
+        "pinKey": "BkTwWq5nU"
+      },
+      "output": {
+        "nodeId": "ryGM_J8vNt",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "S1BMdJLD4t",
+      "input": {
+        "nodeId": "SyxMuy8DVK",
+        "pinKey": "Bk5lexBtE"
+      },
+      "output": {
+        "nodeId": "Hy-GdJUP4K",
+        "pinKey": "H12bIR_SPyZ"
+      }
+    },
+    {
+      "id": "H11kl8vVK",
+      "input": {
+        "nodeId": "SkMuJIw4t",
+        "pinKey": "Skq5xqq2L"
+      },
+      "output": {
+        "nodeId": "HkW01LD4K",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryhR8UPEt",
+      "input": {
+        "nodeId": "S1mVIyUPVt",
+        "pinKey": "Hk2wvHg3U"
+      },
+      "output": {
+        "nodeId": "rJwALIvVY",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"va0.val\""
+      },
+      "id": "HJEUy8wNK",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    },
+    {
+      "id": "SyeV8kLDNK",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/gpio/analog-read"
+    },
+    {
+      "id": "SJZN8yIvEK",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -4,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "H1fNI1Lw4t",
+      "position": {
+        "units": "slots",
+        "x": -4,
+        "y": 0
+      },
+      "type": "@/nextion-serial1"
+    },
+    {
+      "id": "S1mVIyUPVt",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "@/write-number"
+    },
+    {
+      "boundLiterals": {
+        "HJCWLAdSwyW": "1",
+        "rkpbU0OrwyZ": "5000"
+      },
+      "id": "HkEVL1UvVF",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "xod/math/map"
+    },
+    {
+      "id": "SkMuJIw4t",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 1
+      },
+      "type": "@/read-number"
+    },
+    {
+      "boundLiterals": {
+        "BkXK1eBYV": "D9"
+      },
+      "id": "SyxMuy8DVK",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 3
+      },
+      "type": "xod-dev/servo/servo"
+    },
+    {
+      "boundLiterals": {
+        "HJCWLAdSwyW": "100",
+        "rkpbU0OrwyZ": "1"
+      },
+      "id": "Hy-GdJUP4K",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 2
+      },
+      "type": "xod/math/map"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"h0.val\""
+      },
+      "id": "ryGM_J8vNt",
+      "position": {
+        "units": "slots",
+        "x": 15,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    },
+    {
+      "id": "HkW01LD4K",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "rJwALIvVY",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    }
+  ]
 }

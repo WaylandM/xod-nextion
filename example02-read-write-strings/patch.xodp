@@ -1,0 +1,278 @@
+{
+  "comments": [
+    {
+      "content": "Create a *nextion* device on *Serial1* with baud rate of *9600*.",
+      "id": "H1zTIQjDEF",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    },
+    {
+      "content": "*t0.txt* specifies the text (*txt*) attribute of the object named *t0*. Object *t0* is the title displayed at the top of the screen.",
+      "id": "ByxiEov4K",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 0
+      },
+      "size": {
+        "height": 2,
+        "units": "slots",
+        "width": 6
+      }
+    },
+    {
+      "content": "*t1.txt* specifies the text (*txt*) attribute of the object named *t1*. Object *t1* is the large text box occupying most of the display.",
+      "id": "BJ3fHjPNK",
+      "position": {
+        "units": "slots",
+        "x": 19,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 8
+      }
+    },
+    {
+      "content": "# Read text of the title (t0)",
+      "id": "H1Xk8iwVK",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": -1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 8
+      }
+    },
+    {
+      "content": "# Write to large text box (t1)",
+      "id": "HJhbUjw4Y",
+      "position": {
+        "units": "slots",
+        "x": 16,
+        "y": -1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 8
+      }
+    }
+  ],
+  "description": "Patch demonstrating how to read/write text attributes of nextion widgets and variables.",
+  "links": [
+    {
+      "id": "H1WT87jDNF",
+      "input": {
+        "nodeId": "HJa8miPNK",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SkgaUQivVF",
+        "pinKey": "ry-SqrtnL"
+      }
+    },
+    {
+      "id": "r1kF7ow4K",
+      "input": {
+        "nodeId": "ByYPQsDNt",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SyhuQiwVt",
+        "pinKey": "HJPlpDyEK"
+      }
+    },
+    {
+      "id": "rya3mswEF",
+      "input": {
+        "nodeId": "SyhuQiwVt",
+        "pinKey": "Sk4kaPkVK"
+      },
+      "output": {
+        "nodeId": "SyIq7sPVt",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "HkzC7svEt",
+      "input": {
+        "nodeId": "SyhuQiwVt",
+        "pinKey": "S1QE1TPkEt"
+      },
+      "output": {
+        "nodeId": "r1D6QiDVK",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rycRmiPVt",
+      "input": {
+        "nodeId": "rynYmjwEt",
+        "pinKey": "rJebYpt9nI"
+      },
+      "output": {
+        "nodeId": "HyI07owVF",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SkaRXsvVK",
+      "input": {
+        "nodeId": "rynYmjwEt",
+        "pinKey": "rkg56F9hL"
+      },
+      "output": {
+        "nodeId": "Hy8hzsDNY",
+        "pinKey": "H1wh06BEY"
+      }
+    },
+    {
+      "id": "BJ07Niv4t",
+      "input": {
+        "nodeId": "rynYmjwEt",
+        "pinKey": "Skm-t6Y53U"
+      },
+      "output": {
+        "nodeId": "rJg1NoDVt",
+        "pinKey": "B1x2RV3eZ"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "H1wh06BEY": "\"A text string\""
+      },
+      "id": "Hy8hzsDNY",
+      "position": {
+        "units": "slots",
+        "x": 18,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 7
+      },
+      "type": "xod/debug/tweak-string-128"
+    },
+    {
+      "id": "HJa8miPNK",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "SkgaUQivVF",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "@/nextion-serial1"
+    },
+    {
+      "id": "ByYPQsDNt",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 8
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SyhuQiwVt",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 1
+      },
+      "type": "@/read-string"
+    },
+    {
+      "id": "rynYmjwEt",
+      "position": {
+        "units": "slots",
+        "x": 16,
+        "y": 2
+      },
+      "type": "@/write-string"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"t0.txt\""
+      },
+      "id": "SyIq7sPVt",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    },
+    {
+      "id": "r1D6QiDVK",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "HyI07owVF",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 16,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"t1.txt\""
+      },
+      "id": "rJg1NoDVt",
+      "position": {
+        "units": "slots",
+        "x": 17,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    }
+  ]
+}
