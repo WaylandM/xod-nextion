@@ -27,6 +27,20 @@
         "units": "slots",
         "width": 24
       }
+    },
+    {
+      "content": "Dual state buttons can take one of two values: \n* **0** off state\n* **1** on state\n\nHere we read the state of the button and translate it to an LED luminance:\n* **0** LED not illuminated\n* **1** LED at maximum brightness",
+      "id": "BJFdcjOEY",
+      "position": {
+        "units": "slots",
+        "x": 16,
+        "y": 0
+      },
+      "size": {
+        "height": 3,
+        "units": "slots",
+        "width": 8
+      }
     }
   ],
   "description": "Patch to demonstrate operation of dual-state buttons. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example03-dual-state-button.HMI",

@@ -5,27 +5,13 @@
       "id": "H1xe-N_VY",
       "position": {
         "units": "slots",
-        "x": -1,
+        "x": 4,
         "y": 0
       },
       "size": {
         "height": 1,
         "units": "slots",
         "width": 4
-      }
-    },
-    {
-      "content": "Touch events are detected by the *listen* node which should be updated continuously.",
-      "id": "HkLZWNONK",
-      "position": {
-        "units": "slots",
-        "x": 6,
-        "y": 1
-      },
-      "size": {
-        "height": 1,
-        "units": "slots",
-        "width": 6
       }
     },
     {
@@ -40,6 +26,48 @@
         "height": 1,
         "units": "slots",
         "width": 23
+      }
+    },
+    {
+      "content": "In the Nextion GUI, we have configured button presses to generate triggers which can be detected by the *listen* node. The *listen* node must be updated continuously to monitor serial traffic for triggers.",
+      "id": "ByhYehdNY",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 12
+      }
+    },
+    {
+      "content": "Each button on the Nextion GUI has been assigned it's own unique trigger ID. When a button is pressed and released, its trigger ID will be detected and reported by the *listen* node.",
+      "id": "Sk1o-ndEY",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 13
+      }
+    },
+    {
+      "content": "We write the trigger ID to the number box on the Nextion display to show which button has been pressed.",
+      "id": "SyOjz2uVY",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 7
       }
     }
   ],

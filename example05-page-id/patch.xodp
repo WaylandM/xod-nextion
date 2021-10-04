@@ -5,15 +5,286 @@
       "id": "H1qFEv_NF",
       "position": {
         "units": "slots",
-        "x": 1,
-        "y": 1
+        "x": -2,
+        "y": 0
       },
       "size": {
         "height": 1,
         "units": "slots",
         "width": 22
       }
+    },
+    {
+      "content": "Create a *nextion* device on *Serial1* with baud rate of *9600*.",
+      "id": "Hyt3VRO4F",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": -4
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    },
+    {
+      "content": "The *listen* node monitors page changes and stores current and previous page IDs.",
+      "id": "SJn64Au4F",
+      "position": {
+        "units": "slots",
+        "x": -6,
+        "y": -3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 5
+      }
+    },
+    {
+      "content": "Retrieve the *current* and *previous* page IDs.",
+      "id": "rJiHrRd4Y",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": -3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    },
+    {
+      "content": "Write *current* and *previous* page IDs to their corresponding number boxes on Nextion display.",
+      "id": "B1Dvr0dVF",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": -1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 6
+      }
     }
   ],
-  "description": "Patch to demonstrate reading numerical IDs of current and previous pages of the Nextion display. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example05-page-id.HMI"
+  "description": "Patch to demonstrate reading numerical IDs of current and previous pages of the Nextion display. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example05-page-id.HMI",
+  "links": [
+    {
+      "id": "HJmJQGAd4Y",
+      "input": {
+        "nodeId": "rkJXG0uVt",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "S1e17fA_Vt",
+        "pinKey": "ry-SqrtnL"
+      }
+    },
+    {
+      "id": "B14y7GRuVK",
+      "input": {
+        "nodeId": "ry-yQfRuEF",
+        "pinKey": "r1QBt-8NY"
+      },
+      "output": {
+        "nodeId": "S1e17fA_Vt",
+        "pinKey": "ry-SqrtnL"
+      }
+    },
+    {
+      "id": "ByPCzCdNF",
+      "input": {
+        "nodeId": "SJMk7GRuNY",
+        "pinKey": "ByqWh9y4F"
+      },
+      "output": {
+        "nodeId": "S1e17fA_Vt",
+        "pinKey": "ry-SqrtnL"
+      }
+    },
+    {
+      "id": "H1hy7RuNY",
+      "input": {
+        "nodeId": "H1CHf0uNK",
+        "pinKey": "Hk2wvHg3U"
+      },
+      "output": {
+        "nodeId": "B1D1Q0O4K",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "r1xe7COVt",
+      "input": {
+        "nodeId": "H1LUGC_NF",
+        "pinKey": "Hk2wvHg3U"
+      },
+      "output": {
+        "nodeId": "SJwFzCOVt",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "B1MD7CO4F",
+      "input": {
+        "nodeId": "H1LUGC_NF",
+        "pinKey": "ryxTPHx2U"
+      },
+      "output": {
+        "nodeId": "SJWSXCdVF",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "HyCwQ0d4K",
+      "input": {
+        "nodeId": "H1CHf0uNK",
+        "pinKey": "ryxTPHx2U"
+      },
+      "output": {
+        "nodeId": "H1Ur7R_4F",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "rkqhmR_NF",
+      "input": {
+        "nodeId": "H1LUGC_NF",
+        "pinKey": "SJ4UuBx3L"
+      },
+      "output": {
+        "nodeId": "SJMk7GRuNY",
+        "pinKey": "HJ0rn5k4Y"
+      }
+    },
+    {
+      "id": "BkQpXCu4t",
+      "input": {
+        "nodeId": "H1CHf0uNK",
+        "pinKey": "SJ4UuBx3L"
+      },
+      "output": {
+        "nodeId": "SJMk7GRuNY",
+        "pinKey": "SJrdnckVF"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "rkJXG0uVt",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": -3
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "S1e17fA_Vt",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": -4
+      },
+      "type": "@/nextion-serial1"
+    },
+    {
+      "id": "ry-yQfRuEF",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": -3
+      },
+      "type": "@/listen"
+    },
+    {
+      "boundLiterals": {
+        "rJiz29kNK": "Continuously"
+      },
+      "id": "SJMk7GRuNY",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": -3
+      },
+      "type": "@/get-page-id"
+    },
+    {
+      "id": "H1CHf0uNK",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": -1
+      },
+      "type": "@/write-number"
+    },
+    {
+      "id": "H1LUGC_NF",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": -1
+      },
+      "type": "@/write-number"
+    },
+    {
+      "id": "SJwFzCOVt",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "B1D1Q0O4K",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"n0.val\""
+      },
+      "id": "SJWSXCdVF",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": -2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"n1.val\""
+      },
+      "id": "H1Ur7R_4F",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": -2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    }
+  ]
 }
