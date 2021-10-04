@@ -13,9 +13,23 @@
         "units": "slots",
         "width": 4
       }
+    },
+    {
+      "content": "# HMI file: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example03-dual-state-button.HMI",
+      "id": "rJJuXwu4t",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 24
+      }
     }
   ],
-  "description": "Patch to demonstrate operation of dual-state buttons.",
+  "description": "Patch to demonstrate operation of dual-state buttons. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example03-dual-state-button.HMI",
   "links": [
     {
       "id": "SJjGdLsw4F",

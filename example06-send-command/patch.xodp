@@ -1,2 +1,19 @@
 {
+  "comments": [
+    {
+      "content": "# HMI file: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example06-send-command.HMI",
+      "id": "SJqkrPuEY",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 22
+      }
+    }
+  ],
+  "description": "Patch to demonstrate how commands can be sent to the Nextion display. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example06-send-command.HMI"
 }

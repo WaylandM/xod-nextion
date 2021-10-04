@@ -6,7 +6,7 @@
       "position": {
         "units": "slots",
         "x": 0,
-        "y": 4
+        "y": 5
       },
       "size": {
         "height": 1,
@@ -167,9 +167,23 @@
         "units": "slots",
         "width": 4
       }
+    },
+    {
+      "content": "# HMI file: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example01-read-write-numbers.HMI\n",
+      "id": "HyRHMwO4F",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 4
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 23
+      }
     }
   ],
-  "description": "Patch demonstrating how to read/write numeric attributes of nextion widgets and variables.",
+  "description": "Patch demonstrating how to read/write numeric attributes of nextion widgets and variables. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example01-read-write-numbers.HMI",
   "links": [
     {
       "id": "S1LV81UvEF",

@@ -1,2 +1,19 @@
 {
+  "comments": [
+    {
+      "content": "# HMI file: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example05-page-id.HMI",
+      "id": "H1qFEv_NF",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 22
+      }
+    }
+  ],
+  "description": "Patch to demonstrate reading numerical IDs of current and previous pages of the Nextion display. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example05-page-id.HMI"
 }

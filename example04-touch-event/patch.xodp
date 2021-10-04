@@ -1,2 +1,201 @@
 {
+  "comments": [
+    {
+      "content": "Create a *nextion* device on *Serial1* with baud rate of *9600*.",
+      "id": "H1xe-N_VY",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    },
+    {
+      "content": "Touch events are detected by the *listen* node which should be updated continuously.",
+      "id": "HkLZWNONK",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 6
+      }
+    },
+    {
+      "content": "# HMI file: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example04-touch-event.HMI",
+      "id": "Byll4PdNF",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 4
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 23
+      }
+    }
+  ],
+  "description": "Patch to demonstrate detection of touch events. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example04-touch-event.HMI",
+  "links": [
+    {
+      "id": "SJi_hgE_VK",
+      "input": {
+        "nodeId": "Bku3xEu4Y",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "rJg_nl4uVF",
+        "pinKey": "ry-SqrtnL"
+      }
+    },
+    {
+      "id": "BJ3d3eVd4F",
+      "input": {
+        "nodeId": "ryWO3gNdVK",
+        "pinKey": "r1QBt-8NY"
+      },
+      "output": {
+        "nodeId": "rJg_nl4uVF",
+        "pinKey": "ry-SqrtnL"
+      }
+    },
+    {
+      "id": "rkJeO2e4_4Y",
+      "input": {
+        "nodeId": "Hy7OhgEdNY",
+        "pinKey": "Hk2wvHg3U"
+      },
+      "output": {
+        "nodeId": "S1H_2lEu4t",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "B17ed2e4OEK",
+      "input": {
+        "nodeId": "Hy7OhgEdNY",
+        "pinKey": "ryxTPHx2U"
+      },
+      "output": {
+        "nodeId": "ByDO3xVdNY",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "rJ4eu3l4uEY",
+      "input": {
+        "nodeId": "SJdO3xEONF",
+        "pinKey": "S113G_ZJm"
+      },
+      "output": {
+        "nodeId": "ryWO3gNdVK",
+        "pinKey": "B1W-qWI4F"
+      }
+    },
+    {
+      "id": "SJSx_2x4uVt",
+      "input": {
+        "nodeId": "Hy7OhgEdNY",
+        "pinKey": "SJ4UuBx3L"
+      },
+      "output": {
+        "nodeId": "SJdO3xEONF",
+        "pinKey": "Sk43MO-Jm"
+      }
+    },
+    {
+      "id": "HJJkbNOVY",
+      "input": {
+        "nodeId": "Hy7OhgEdNY",
+        "pinKey": "rk3DdHeh8"
+      },
+      "output": {
+        "nodeId": "ryWO3gNdVK",
+        "pinKey": "ry05YbU4Y"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "Bku3xEu4Y",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "rJg_nl4uVF",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "@/nextion-serial1"
+    },
+    {
+      "id": "ryWO3gNdVK",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "@/listen"
+    },
+    {
+      "id": "Hy7OhgEdNY",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "type": "@/write-number"
+    },
+    {
+      "id": "S1H_2lEu4t",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"n0.val\""
+      },
+      "id": "ByDO3xVdNY",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    },
+    {
+      "id": "SJdO3xEONF",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/bits/u8-to-number"
+    }
+  ]
 }

@@ -69,9 +69,37 @@
         "units": "slots",
         "width": 8
       }
+    },
+    {
+      "content": "# HMI file: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example02-read-write-strings.HMI",
+      "id": "SysGmw_EY",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 23
+      }
+    },
+    {
+      "content": "String to be written to the *t1* text box.",
+      "id": "ryanLjOEK",
+      "position": {
+        "units": "slots",
+        "x": 25,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 3
+      }
     }
   ],
-  "description": "Patch demonstrating how to read/write text attributes of nextion widgets and variables.",
+  "description": "Patch demonstrating how to read/write text attributes of nextion widgets and variables. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example02-read-write-strings.HMI",
   "links": [
     {
       "id": "H1WT87jDNF",
@@ -129,17 +157,6 @@
       }
     },
     {
-      "id": "SkaRXsvVK",
-      "input": {
-        "nodeId": "rynYmjwEt",
-        "pinKey": "rkg56F9hL"
-      },
-      "output": {
-        "nodeId": "Hy8hzsDNY",
-        "pinKey": "H1wh06BEY"
-      }
-    },
-    {
       "id": "BJ07Niv4t",
       "input": {
         "nodeId": "rynYmjwEt",
@@ -149,26 +166,20 @@
         "nodeId": "rJg1NoDVt",
         "pinKey": "B1x2RV3eZ"
       }
+    },
+    {
+      "id": "SJN5Jo_EY",
+      "input": {
+        "nodeId": "rynYmjwEt",
+        "pinKey": "rkg56F9hL"
+      },
+      "output": {
+        "nodeId": "H1cIJoOEt",
+        "pinKey": "H1wh06BEW"
+      }
     }
   ],
   "nodes": [
-    {
-      "boundLiterals": {
-        "H1wh06BEY": "\"A text string\""
-      },
-      "id": "Hy8hzsDNY",
-      "position": {
-        "units": "slots",
-        "x": 18,
-        "y": 1
-      },
-      "size": {
-        "height": 1,
-        "units": "slots",
-        "width": 7
-      },
-      "type": "xod/debug/tweak-string-128"
-    },
     {
       "id": "HJa8miPNK",
       "label": "DEV",
@@ -273,6 +284,23 @@
         "width": 2
       },
       "type": "xod/core/constant-string"
+    },
+    {
+      "boundLiterals": {
+        "H1wh06BEW": "\"Message from Arduino.\""
+      },
+      "id": "H1cIJoOEt",
+      "position": {
+        "units": "slots",
+        "x": 18,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 7
+      },
+      "type": "xod/debug/tweak-string-32"
     }
   ]
 }

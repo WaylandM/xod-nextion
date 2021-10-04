@@ -1,4 +1,21 @@
 {
+  "comments": [
+    {
+      "content": "# HMI file: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example07.HMI",
+      "id": "H1JKSvdNY",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": 6
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 19
+      }
+    }
+  ],
+  "description": "Patch combining much of the functionality of the other examples for demonstration and testing purposes. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example07.HMI",
   "links": [
     {
       "id": "rkhgzkQ48Nt",
@@ -663,7 +680,7 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": -11,
+        "x": -8,
         "y": 1
       },
       "type": "xod/patch-nodes/to-bus"
@@ -701,7 +718,7 @@
       "id": "SkfezkXV8NY",
       "position": {
         "units": "slots",
-        "x": -10,
+        "x": -7,
         "y": 0
       },
       "type": "@/nextion-serial1"
@@ -822,7 +839,7 @@
       "id": "S10PxBLVK",
       "position": {
         "units": "slots",
-        "x": -10,
+        "x": -7,
         "y": 1
       },
       "type": "@/listen"
@@ -834,7 +851,7 @@
       "id": "rkwdlBUNF",
       "position": {
         "units": "slots",
-        "x": -7,
+        "x": -4,
         "y": 1
       },
       "type": "@/get-page-id"
@@ -843,7 +860,7 @@
       "id": "HkfCQr8EF",
       "position": {
         "units": "slots",
-        "x": -11,
+        "x": -8,
         "y": 5
       },
       "type": "@/write-number"
@@ -855,7 +872,7 @@
       "id": "B1eVSS8EK",
       "position": {
         "units": "slots",
-        "x": -8,
+        "x": -5,
         "y": 2
       },
       "type": "xod/core/greater"
@@ -865,7 +882,7 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": -12,
+        "x": -9,
         "y": 5
       },
       "type": "xod/patch-nodes/from-bus"
@@ -874,7 +891,7 @@
       "id": "S1K0BBLVK",
       "position": {
         "units": "slots",
-        "x": -7,
+        "x": -4,
         "y": 3
       },
       "type": "xod/core/branch"
@@ -886,7 +903,7 @@
       "id": "SyTN8S84F",
       "position": {
         "units": "slots",
-        "x": -11,
+        "x": -8,
         "y": 4
       },
       "size": {
@@ -900,7 +917,7 @@
       "id": "BkIQvS8VY",
       "position": {
         "units": "slots",
-        "x": -9,
+        "x": -6,
         "y": 4
       },
       "type": "xod/bits/u8-to-number"
@@ -909,7 +926,7 @@
       "id": "HySZYHIVK",
       "position": {
         "units": "slots",
-        "x": -11,
+        "x": -8,
         "y": 2
       },
       "type": "xod/debug/watch"
@@ -918,7 +935,7 @@
       "id": "SknZKrU4Y",
       "position": {
         "units": "slots",
-        "x": -4,
+        "x": -1,
         "y": 2
       },
       "type": "xod/debug/watch"

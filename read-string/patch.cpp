@@ -18,7 +18,7 @@ node {
             cString[i]=0;
         dump(xString, cString);
 
-        String str = eznex -> readString(cString);
+        String str = eznex -> readStr(cString);
         int strLen = str.length() + 1;
         cStringOut = new char[strLen];
 
