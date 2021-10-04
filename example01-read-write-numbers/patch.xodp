@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "# A tutorial on using the nextion library can be found here: https://www.hackster.io/wayland2/",
+      "content": "# A tutorial on using the nextion library can be found here: https://www.hackster.io/wayland2/use-nextion-displays-with-xod-4a99f2",
       "id": "BkkIl8PEt",
       "position": {
         "units": "slots",
@@ -11,7 +11,7 @@
       "size": {
         "height": 1,
         "units": "slots",
-        "width": 19
+        "width": 18
       }
     },
     {

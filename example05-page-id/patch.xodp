@@ -5,7 +5,7 @@
       "id": "H1qFEv_NF",
       "position": {
         "units": "slots",
-        "x": -2,
+        "x": -6,
         "y": 0
       },
       "size": {
@@ -68,6 +68,20 @@
         "height": 1,
         "units": "slots",
         "width": 6
+      }
+    },
+    {
+      "content": "# A tutorial on using the nextion library can be found here: https://www.hackster.io/wayland2/use-nextion-displays-with-xod-4a99f2",
+      "id": "rks8Hlt4K",
+      "position": {
+        "units": "slots",
+        "x": -6,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 18
       }
     }
   ],

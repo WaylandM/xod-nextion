@@ -13,6 +13,34 @@
         "units": "slots",
         "width": 19
       }
+    },
+    {
+      "content": "# A tutorial on using the nextion library can be found here: https://www.hackster.io/wayland2/use-nextion-displays-with-xod-4a99f2",
+      "id": "ByTTPlK4F",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": 7
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 18
+      }
+    },
+    {
+      "content": "Check which page is active, so that we read/write from the correct objects.",
+      "id": "HyogdgFVt",
+      "position": {
+        "units": "slots",
+        "x": -9,
+        "y": 2
+      },
+      "size": {
+        "height": 2,
+        "units": "slots",
+        "width": 4
+      }
     }
   ],
   "description": "Patch combining much of the functionality of the other examples for demonstration and testing purposes. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example07.HMI",
@@ -467,28 +495,6 @@
         "nodeId": "S1K0BBLVK",
         "pinKey": "SJUl8Aurv1W"
       }
-    },
-    {
-      "id": "rkqbYSUVF",
-      "input": {
-        "nodeId": "HySZYHIVK",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "S10PxBLVK",
-        "pinKey": "B1W-qWI4F"
-      }
-    },
-    {
-      "id": "r1eGtrI4t",
-      "input": {
-        "nodeId": "SknZKrU4Y",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "rkwdlBUNF",
-        "pinKey": "HJ0rn5k4Y"
-      }
     }
   ],
   "nodes": [
@@ -680,7 +686,7 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": -8,
+        "x": -7,
         "y": 1
       },
       "type": "xod/patch-nodes/to-bus"
@@ -718,7 +724,7 @@
       "id": "SkfezkXV8NY",
       "position": {
         "units": "slots",
-        "x": -7,
+        "x": -6,
         "y": 0
       },
       "type": "@/nextion-serial1"
@@ -839,7 +845,7 @@
       "id": "S10PxBLVK",
       "position": {
         "units": "slots",
-        "x": -7,
+        "x": -6,
         "y": 1
       },
       "type": "@/listen"
@@ -851,7 +857,7 @@
       "id": "rkwdlBUNF",
       "position": {
         "units": "slots",
-        "x": -4,
+        "x": -3,
         "y": 1
       },
       "type": "@/get-page-id"
@@ -872,7 +878,7 @@
       "id": "B1eVSS8EK",
       "position": {
         "units": "slots",
-        "x": -5,
+        "x": -4,
         "y": 2
       },
       "type": "xod/core/greater"
@@ -921,24 +927,6 @@
         "y": 4
       },
       "type": "xod/bits/u8-to-number"
-    },
-    {
-      "id": "HySZYHIVK",
-      "position": {
-        "units": "slots",
-        "x": -8,
-        "y": 2
-      },
-      "type": "xod/debug/watch"
-    },
-    {
-      "id": "SknZKrU4Y",
-      "position": {
-        "units": "slots",
-        "x": -1,
-        "y": 2
-      },
-      "type": "xod/debug/watch"
     }
   ]
 }

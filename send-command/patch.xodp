@@ -1,5 +1,5 @@
 {
-  "description": "Send command to the nextion display.",
+  "description": "Send any command in the Nextion instruction set to the touchscreen. https://nextion.tech/instruction-set/",
   "nodes": [
     {
       "id": "Hy9hK21VF",

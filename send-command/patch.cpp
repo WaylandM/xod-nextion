@@ -7,7 +7,6 @@ node {
         // Get a pointer to the `EasyNex` class instance
         auto eznex = getValue<input_DEV>(ctx);
         auto xStringCmd = getValue<input_CMD>(ctx);
-        auto xStringText = getValue<input_TEXT>(ctx);
 
         int N=length(xStringCmd) + 1;
         char cStringCmd[N];

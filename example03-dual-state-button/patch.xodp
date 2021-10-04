@@ -41,6 +41,20 @@
         "units": "slots",
         "width": 8
       }
+    },
+    {
+      "content": "# A tutorial on using the nextion library can be found here: https://www.hackster.io/wayland2/use-nextion-displays-with-xod-4a99f2",
+      "id": "BysEBltEt",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 4
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 18
+      }
     }
   ],
   "description": "Patch to demonstrate operation of dual-state buttons. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example03-dual-state-button.HMI",

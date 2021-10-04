@@ -97,6 +97,20 @@
         "units": "slots",
         "width": 3
       }
+    },
+    {
+      "content": "# A tutorial on using the nextion library can be found here: https://www.hackster.io/wayland2/use-nextion-displays-with-xod-4a99f2",
+      "id": "ryQVBxK4Y",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 4
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 18
+      }
     }
   ],
   "description": "Patch demonstrating how to read/write text attributes of nextion widgets and variables. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example02-read-write-strings.HMI",

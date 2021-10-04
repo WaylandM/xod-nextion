@@ -5,15 +5,303 @@
       "id": "SJqkrPuEY",
       "position": {
         "units": "slots",
-        "x": 1,
-        "y": 1
+        "x": 3,
+        "y": 3
       },
       "size": {
         "height": 1,
         "units": "slots",
         "width": 22
       }
+    },
+    {
+      "content": "Create a *nextion* device on *Serial1* with baud rate of *9600*.",
+      "id": "H1ftjTJFVK",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": -2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    },
+    {
+      "content": "The *send-command* node can send any command in the Nextion instruction set (https://nextion.tech/instruction-set/). Here we send the command \"sleep=1\" to put the touchscreen to sleep.",
+      "id": "B15WMxFNt",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 12
+      }
+    },
+    {
+      "content": "# A tutorial on using the nextion library can be found here: https://www.hackster.io/wayland2/use-nextion-displays-with-xod-4a99f2",
+      "id": "HkUdBltVY",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 4
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 18
+      }
+    },
+    {
+      "content": "Create a ten second countdown.",
+      "id": "rkB-8lKEY",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    },
+    {
+      "content": "Update *n0* number box on Nextion screen to show countdown.",
+      "id": "rJInLgt4K",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
     }
   ],
-  "description": "Patch to demonstrate how commands can be sent to the Nextion display. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example06-send-command.HMI"
+  "description": "Patch to demonstrate how commands can be sent to the Nextion display. To be used with the following Nextion GUI: https://github.com/WaylandM/xod-nextion/blob/master/hmi/xod-example06-send-command.HMI",
+  "links": [
+    {
+      "id": "SkbtipkFVF",
+      "input": {
+        "nodeId": "r1Yo6JFNt",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "Bkgtj6JYNt",
+        "pinKey": "ry-SqrtnL"
+      }
+    },
+    {
+      "id": "BkhQ01K4t",
+      "input": {
+        "nodeId": "ryRWRkt4t",
+        "pinKey": "ryxTPHx2U"
+      },
+      "output": {
+        "nodeId": "ryBM0kFNt",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "BkYjxlK4K",
+      "input": {
+        "nodeId": "ryRWRkt4t",
+        "pinKey": "SJ4UuBx3L"
+      },
+      "output": {
+        "nodeId": "BJ_KlgF4K",
+        "pinKey": "Bk--RE_rV"
+      }
+    },
+    {
+      "id": "S1DlZgtEY",
+      "input": {
+        "nodeId": "rkflbgFNY",
+        "pinKey": "Bkx5nt3kEY"
+      },
+      "output": {
+        "nodeId": "BJ_KlgF4K",
+        "pinKey": "rkyv-a5S4"
+      }
+    },
+    {
+      "id": "ryN--lKEt",
+      "input": {
+        "nodeId": "rkflbgFNY",
+        "pinKey": "Hyf5ht2JVY"
+      },
+      "output": {
+        "nodeId": "H10lbeYEK",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BJ9N-et4F",
+      "input": {
+        "nodeId": "rkflbgFNY",
+        "pinKey": "rkb5nt2kNY"
+      },
+      "output": {
+        "nodeId": "SkP7WltEK",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "H1mFWgtEY",
+      "input": {
+        "nodeId": "HkpOZeKEK",
+        "pinKey": "SkSuD6LMb"
+      },
+      "output": {
+        "nodeId": "SJqv-xK4t",
+        "pinKey": "ryVmUAOrvkb"
+      }
+    },
+    {
+      "id": "HydK-lY4Y",
+      "input": {
+        "nodeId": "BJ_KlgF4K",
+        "pinKey": "S1Rp6EuBE"
+      },
+      "output": {
+        "nodeId": "HkpOZeKEK",
+        "pinKey": "Bk4gU0drwJ-"
+      }
+    },
+    {
+      "id": "SyEp-eYEY",
+      "input": {
+        "nodeId": "ryRWRkt4t",
+        "pinKey": "Hk2wvHg3U"
+      },
+      "output": {
+        "nodeId": "Bkgtj6JYNt",
+        "pinKey": "ry-SqrtnL"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "r1Yo6JFNt",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "Bkgtj6JYNt",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": -2
+      },
+      "type": "@/nextion-serial1"
+    },
+    {
+      "id": "ryRWRkt4t",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "@/write-number"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"n0.val\""
+      },
+      "id": "ryBM0kFNt",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    },
+    {
+      "boundLiterals": {
+        "BkE3a4uHV": "0",
+        "r1AsTEuHE": "10"
+      },
+      "id": "BJ_KlgF4K",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 0
+      },
+      "type": "xod/core/animation-segment"
+    },
+    {
+      "id": "rkflbgFNY",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 2
+      },
+      "type": "@/send-command"
+    },
+    {
+      "id": "H10lbeYEK",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "\"sleep=1\""
+      },
+      "id": "SkP7WltEK",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/core/constant-string"
+    },
+    {
+      "id": "SJqv-xK4t",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": -2
+      },
+      "type": "xod/core/boot"
+    },
+    {
+      "boundLiterals": {
+        "Skre8ROSv1-": "2"
+      },
+      "id": "HkpOZeKEK",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": -1
+      },
+      "type": "xod/core/delay"
+    }
+  ]
 }
