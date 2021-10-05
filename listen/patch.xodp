@@ -1,5 +1,5 @@
 {
-  "description": "Listen for nextion touch events. This node must be updated continuously to detect touch events. ",
+  "description": "Listen for nextion touch events and page changes. This node must be updated continuously. ",
   "nodes": [
     {
       "id": "HksVt-LNK",
