@@ -14,7 +14,13 @@ node {
         cString[i]=0;
         dump(xString, cString);
 
-        emitValue<output_NUM>(ctx, eznex -> readNumber(cString));
+        uint32_t num = eznex -> readNumber(cString);
+
+        if (num != 777777) {
+            emitValue<output_NUM>(ctx, num);
+            emitValue<output_Read>(ctx, 1);
+        }
+
         emitValue<output_Done>(ctx, 1);
     }
 }

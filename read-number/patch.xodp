@@ -58,9 +58,20 @@
       "type": "@/input-nextion-serial"
     },
     {
-      "description": "Pulse on read.",
+      "description": "Pulse on each attempt to read a numeric value.",
       "id": "HJG5Qu1VY",
       "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": -14,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Pulse on successful read of a numeric value.",
+      "id": "Bk1ksZxUY",
+      "label": "Read",
       "position": {
         "units": "slots",
         "x": -15,

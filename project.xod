@@ -2,5 +2,5 @@
   "description": "Library for Nextion displays. Wraps Athanasios Seitanis's Easy Nextion Library (https://github.com/Seithan/EasyNextionLibrary). ",
   "license": "MIT",
   "name": "nextion",
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
